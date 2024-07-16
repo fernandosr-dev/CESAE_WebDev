@@ -6,10 +6,37 @@ ul {
 
   li {
     float: right;
-    position: sticky;
+
   }
   
   a {
     display: block;
     padding: 8px;
   }
+
+  .footer{
+background-color: gray;
+
+  }
+
+  .top_heading{
+
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(45, 51, 57, .95);
+    min-height: 235px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.7em;
+
+}
+  
