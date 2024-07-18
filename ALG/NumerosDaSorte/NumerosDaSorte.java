@@ -1,8 +1,12 @@
 import java.util.Random;
 class NumerosDaSorte
-{
+{   
+    // int valor = 6 (variável global)
+    
     NumerosDaSorte()
     {
+    // variável local à função
+    // int teste = 7;
         System.out.println("O 1o número sorteado é: " + lancarDado() );
         System.out.println("O 2o número sorteado é: " + lancarDado() );
         System.out.println("O 3o número sorteado é: " + lancarDado() );
