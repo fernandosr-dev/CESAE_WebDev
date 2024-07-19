@@ -59,13 +59,14 @@ class SimuladorApp
     
         escritaUtilizador = scanTextoUtilizador.nextLine();
         
-        if( escritaUtilizador.equals("sim") == true)
+        if( escritaUtilizador.equalsIgnoreCase("sim") == true)
         {
             pedidoLancamento();
         }
         else
         {
             System.out.println("Obrigado por utilizar o nosso simulador. Fechar programa!");
+            scanTextoUtilizador.close();
         }
     }
     
