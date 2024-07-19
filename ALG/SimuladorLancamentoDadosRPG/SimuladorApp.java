@@ -7,6 +7,7 @@ class SimuladorApp
 {   
     // Variáveis globais da classe, também denominadas de propriedades ou atributos. 
     Scanner scanNumeroUtilizador = new Scanner(System.in);
+    Scanner scanTextoUtilizador = new Scanner(System.in);
     Random objetoNumeroAleatorio = new Random();
     //boolean comecouPrograma == true; 
     SimuladorApp() 
@@ -50,6 +51,22 @@ class SimuladorApp
         int resultadoDoLancamento = objetoNumeroAleatorio.nextInt(generoDeDadoALancar) + 1;
         
         System.out.println("O resultado do lançamento foi: " + resultadoDoLancamento);
+        System.out.println("Deseja fazer mais algum lançamento? Escreva sim para lançar outro dado");
+        System.out.println("Caso contrário, escreva outra coisa qualquer");
+        
+        String escritaUtilizador = new String(); 
+        //scanNumeroUtilizador.nextLine();
+    
+        escritaUtilizador = scanTextoUtilizador.nextLine();
+        
+        if( escritaUtilizador.equals("sim") == true)
+        {
+            pedidoLancamento();
+        }
+        else
+        {
+            System.out.println("Obrigado por utilizar o nosso simulador. Fechar programa!");
+        }
     }
     
 }
