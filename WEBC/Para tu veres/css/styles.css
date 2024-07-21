@@ -7,7 +7,7 @@
     src: url('https://fonts.cdnfonts.com/s/23128/Friends.woff') format('woff');
 }
 body {
-    padding-top: 70px;
+    padding-top: 100px;
 }
 .navbar-brand {
     font-family: 'FriendsFont', sans-serif;
@@ -91,4 +91,21 @@ body {
 }
 .container{
     padding: 20px
+}
+
+.container_news {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #333;
+}
+p {
+    margin: 10px 0;
+}
+.highlight {
+    font-weight: bold;
 }
