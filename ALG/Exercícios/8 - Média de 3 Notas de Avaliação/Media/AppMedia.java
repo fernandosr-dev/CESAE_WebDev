@@ -9,12 +9,12 @@
  
  // Passos para resolver o exercício:
 
-	// 1.	Pedir ao usuário para fornecer a primeira nota.
-	// 2.	Pedir ao usuário para fornecer a segunda nota.
-	// 3.	Pedir ao usuário para fornecer a terceira nota.
-	// 4.	Calcular a média das três notas.
-	// 5.	Exibir a média final.
-	
+    // 1.    Pedir ao usuário para fornecer a primeira nota.
+    // 2.    Pedir ao usuário para fornecer a segunda nota.
+    // 3.    Pedir ao usuário para fornecer a terceira nota.
+    // 4.    Calcular a média das três notas.
+    // 5.    Exibir a média final.
+    
 import java.util.Scanner;
 
 class AppMedia
@@ -46,14 +46,14 @@ class AppMedia
         String escritaUtilizador = new String();
         escritaUtilizador = textoUtilizador.nextLine();
         
-        if(escritaUtilizador.equalsIgnoreCase("sim"));
+        if(escritaUtilizador.equalsIgnoreCase("sim"))
         {
             System.out.println("Escreveste sim!");
-            notasUtilizador();
+            notasUtilizador();           
         }
         else
         {
             System.out.println("Não escreveste sim!");
-        }
+        }  
     }
 }
