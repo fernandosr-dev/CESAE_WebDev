@@ -25,5 +25,22 @@ class ClasseC
         // {
         }
     }
-    
 }
+
+
+// if (misterioso == sugerido)
+    // {
+        // //esever que acertou
+    // }
+    
+    // else
+    // {
+        // //escrever que falhou
+    // if(misterioso < sugerido)
+    // {
+        // //escreve que é menor
+    // }
+    // else
+    // {
+        // //escreve que é maior
+    // }

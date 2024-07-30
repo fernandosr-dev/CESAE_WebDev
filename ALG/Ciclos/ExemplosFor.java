@@ -16,6 +16,7 @@ class ExemplosFor
         {
             System.out.println("Escreve texto!!");
             System.out.println(a);
+            
         }
     }
 }
