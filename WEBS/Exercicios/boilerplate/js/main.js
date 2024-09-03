@@ -3,9 +3,9 @@
 
 // alert(`${myName} ${myLuckyNumber}`);
 
-const MESSAGE =   "   TASTE THE RAINBOW!  "
+// const MESSAGE =   "   TASTE THE RAINBOW!  "
 
-let whisper = MESSAGE.trim().toLowerCase();
+// let whisper = MESSAGE.trim().toLowerCase();
 
-console.log(whisper);
+// console.log(whisper);
 
