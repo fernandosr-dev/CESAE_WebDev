@@ -1,0 +1,5 @@
+Banco de dados
+
+1 para 1 - chave estrangeira na entidade mais relevante
+1 para N - chave estrangeira na N
+N para N - criar tabela intermediária para as duas entidades
