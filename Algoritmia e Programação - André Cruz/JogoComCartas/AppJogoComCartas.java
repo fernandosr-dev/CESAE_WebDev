@@ -20,6 +20,8 @@ class AppJogoComCartas
     
     void criarNovoBaralho()
     {
+        baralho = new ArrayList<>();
+        
         for(int i = 0; i < Carta.arrayNaipes.length; i++)
         {
             for(int j = 0; j < Carta.arrayRanks.length; j++)
