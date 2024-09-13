@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=SalaJogoPoker
+comment1.params=
+comment1.target=SalaJogoPoker()
+comment2.params=
+comment2.target=void\ adicionarJogador()
+comment3.params=
+comment3.target=void\ contarJogadores()
+numComments=4
