@@ -27,4 +27,10 @@ class Carta
         naipe = arrayNaipes[inteiroNaipe];
         rank = arrayRanks[inteiroRank];
     }
+    
+    String escritaCompletaDaCarta()
+    {
+        String designacaoCarta = rank + " de " + naipe;
+        return designacaoCarta;
+    }
 }

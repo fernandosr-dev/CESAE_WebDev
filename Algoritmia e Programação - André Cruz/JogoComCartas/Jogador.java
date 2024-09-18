@@ -7,16 +7,16 @@ class Jogador extends Utilizador
     int pontos;
     String nomeNoJogo;
     Carta cartaDoJogador; 
-    ArrayList<Carta> maoJogador;
+    ArrayList<Carta> cartasNaMao;
     
     Jogador()
     {
-        
+        cartasNaMao = new ArrayList();
     }
     
-    void comprarCarta()
+    void comprarCarta(Carta paramCarta)
     {
-        
+        cartasNaMao.add(paramCarta);
     }
     
     void descartarCarta()

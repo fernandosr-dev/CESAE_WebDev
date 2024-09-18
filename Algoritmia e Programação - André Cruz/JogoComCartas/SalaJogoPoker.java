@@ -9,7 +9,7 @@ class SalaJogoPoker
     Carta instanciaCartaPoker;
     ArrayList<Carta> baralhoPoker;
     
-    Random cartaAleatoria = new Random();
+    Random valorAleatorio = new Random();
 
     
     SalaJogoPoker()
@@ -56,24 +56,61 @@ class SalaJogoPoker
             for(int j = 0; j < Carta.arrayRanks.length; j++)
             {
                 instanciaCartaPoker = new Carta(i, j);
-                System.out.println(instanciaCartaPoker.rank + " de " + instanciaCartaPoker.naipe);
+                //System.out.println(instanciaCartaPoker.rank + " de " + instanciaCartaPoker.naipe);
                 baralhoPoker.add(instanciaCartaPoker);
             }
         }
-        //System.out.println("Um novo baralho foi colocado na mesa.");
+        System.out.println("Um novo baralho foi colocado na mesa.");
     
     }
     
-    void funcaoFlop()
+    void flopComprar3CartasComunidade()
     {
+        System.out.println("O Flop (3 cartas da comunidade) é então o seguinte: ");
+        
         for (int i = 0; i < 3; i++)
         {
-            int indexAleatorio = cartaAleatoria.nextInt(baralhoPoker.size());
-            System.out.println(baralhoPoker.get(indexAleatorio).rank + " de " + baralhoPoker.get(indexAleatorio).naipe);
-            baralhoPoker.remove(indexAleatorio);
+            // int indexCartaQueSaiuNaSorte = valorAleatorio.nextInt(baralhoPoker.size());
+            
+            // Carta cartaComprada = baralhoPoker.get(indexCartaQueSaiuNaSorte);
+            
+            // baralhoPoker.remove(indexCartaQueSaiuNaSorte);
+            
+            Carta cartaComprada = tirarCartaDoBaralho();
+            System.out.println(cartaComprada.rank + " de " + cartaComprada.naipe);
+            
         }
-        
     }
     
+    void todosJogadoresCompramUmaCarta()
+    {
+        for (int i = 0; i < listaJogadores.size(); i++)
+        {
+            // int indexCartaQueSaiuNaSorte = valorAleatorio.nextInt(baralhoPoker.size());
+            
+            // Carta cartaComprada = baralhoPoker.get(indexCartaQueSaiuNaSorte);
+            
+            // baralhoPoker.remove(indexCartaQueSaiuNaSorte);
+            
+            
+            
+            listaJogadores.get(i).comprarCarta(tirarCartaDoBaralho());
+        }
+        
+        System.out.println("Todos os jogadores compraram uma carta! ");
+    }
+    
+    private Carta tirarCartaDoBaralho()
+    {
+        int indexCartaQueSaiuNaSorte = valorAleatorio.nextInt(baralhoPoker.size());
+            
+        Carta cartaComprada = baralhoPoker.get(indexCartaQueSaiuNaSorte);
+            
+        baralhoPoker.remove(indexCartaQueSaiuNaSorte);
+        
+        return cartaComprada;
+    }
 }
+
+
 
