@@ -1,0 +1,148 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fswiss\fcharset0 Arial-BoldMT;\f2\fswiss\fcharset0 Arial-BoldItalicMT;
+\f3\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red55\green55\blue55;
+\red24\green24\blue24;\red5\green10\blue30;\red51\green51\blue51;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c27843\c27843\c27843;
+\cssrgb\c12157\c12157\c12157;\cssrgb\c1569\c4706\c15686;\cssrgb\c25882\c25882\c25882;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww22560\viewh12580\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 \
+
+\f1\b CARDINALIDADE: QUEM DEFINE A CARDINALIDADE \'c9 A REGRA DE NEG\'d3CIO (DOCUMENTO - REQUISITOS)\
+\
+A CARDINALIDADE DEFINE O M\'c1XIMO = 1 OU N - 1 OU MAIS DE 1.\
+SE \'c9 OBRIGAT\'d3RIO \'c9 NO M\'cdNIMO 1.\
+\
+COMO LER A CARDINALIDADE: LER DE ACORDO COM O SEGUNDO NUMERO DE CADA PAR. \
+REL 1 - REL 2:\
+(1, 
+\f2\i 1
+\f1\i0 ) - (1, 
+\f2\i 1
+\f1\i0 )\
+\
+SE L\'ca: RELACIONAMENTO DE 1 PARA 1. UM CLIENTE PARA 1 ENDERE\'c7O (1,1).\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 REL 1 - REL 2:\
+(1, 
+\f2\i 1
+\f1\i0 ) - (0, 
+\f2\i N
+\f1\i0 )\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 SE L\'ca: RELACIONAMENTO DE 1 PARA N. UM CLIENTE PARA PODE TER VARIOS TELEFONES (1,N).\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+OBRIGATORIEDADE: SE VAI ACONTECER OU SE N\'c3O VAI ACONTECER: 0/FALSO - N\'c3O VAI ACONTECER\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 CARDINALIDADE: VAI TRATAR DO M\'c1XIMO DE OCORR\'caNCIAS QUE VAI ACONTECER\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b0 \cf0 \
+Primeira coluna: obrigatoriedade - \'e9 ou n\'e3o obrigada a entrada de um dado?\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Segunda coluna: cardinalidade - \
+	\
+Falso (0, N)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Falso (0, 1)\
+Verdadeiro (1, N)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Verdadeiro (1, 1)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+CLIENTE - TELEFONE - 0 (O CLIENTE N\'c3O \'c9 OBRIGADO A INFORMAR TELEFONE)\
+CLIENTE - ENDERE\'c7O - 1 - VERDADEIRO (QUANDO TEM OBRIGATORIEDADE 1 O M\'cdNIMO \'c9 1). \
+\
+EXEMPLOS:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 (TELEFONE: O CLIENTE N\'c3O \'c9 OBRIGADO A INFORMAR. POR\'c9M, CASO, QUEIRA, ELE PODE INFORMAR MAIS DE UM (0, N)\
+(ENDERE\'c7O: OBRIGAT\'d3RIO O CADASTRO DE UM ENDERE\'c7O. NO M\'c1XIMO UM (1, 1))\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+
+\f1\b OBRIGATORIEDADE: O BD N\'c3O TEM CAPACIDADE DE CONTROLAR OBRIGATORIEDADE ENTRE DUAS TABELAS.\
+QUEM FAZ ISSO \'c9 A LINGUAGEM DE PROGRAMA\'c7\'c3O. O BD TEM COMO TRATAR SOMENTE A CARDINALIDADE (1, N). 
+\f0\b0 \
+\
+\
+\
+\
+
+\f1\b FORMAS NORMAIS:
+\f0\b0 \
+\
+Primeira Forma Normal: (
+\f1\b\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 1FN)
+\f0\b0\fs36 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs40 \cf5 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 Nesta\'a0\cf6 \strokec6 forma\cf5 \strokec5 \'a0os atributos precisam ser at\'f4micos, o que significa que as tabelas n\'e3o podem ter valores repetidos e nem atributos possuindo mais de um valor. Nesta\'a0\cf6 \strokec6 forma\cf5 \strokec5 \'a0os atributos precisam ser at\'f4micos, o que significa que as tabelas n\'e3o podem ter valores repetidos e nem atributos possuindo mais de um valor.
+\fs36 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 1. Toda tabela necessita de pelo menos um 
+\f1\b campo que identifique
+\f0\b0  todo o registro como sendo \'fanico.\
+Isso que chamamos de Chave Prim\'e1ria ou 
+\f1\b Primary Key
+\f0\b0 .\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+2. Todo 
+\f1\b campo vetorizado
+\f0\b0  se tornar\'e1 outra tabela:\
+\
+Ex: 2 telefones numa coluna. Campos da mesma fam\'edlia s\'e3o vetores.\
+\
+\
+3. Todo 
+\f1\b campo multivalorado
+\f0\b0  se tornar\'e1 outra tabela. Ou quando o campo for divis\'edvel.\
+Campo endere\'e7o. Campos multivalorados que n\'e3o s\'e3o da mesma fam\'edlia. Rua, bairro, cidade.\
+\
+\
+\
+\
+
+\f1\b Segunda Forma Normal: 
+\f0\b0 \
+\
+\
+\
+
+\f1\b Terceira Forma Normal: 
+\f0\b0 \
+\
+\
+\
+Chave natural: pertence a coisa/pessoa. Exemplo: CPF\
+Chave artificial: \'e9 criada. Ex. ID autoenumerada. S\'e3o mais usadas que as naturais.\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa60\partightenfactor0
+\ls1\ilvl0
+\f3\fs32 \cf7 \cb3 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec7 Primeira Forma Normal (1NF): Elimina grupos repetitivos e garante que cada valor em uma tabela seja at\'f4mico.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec7 Segunda Forma Normal (2NF): Elimina depend\'eancias parciais e garante que todos os atributos de uma tabela dependam totalmente da chave prim\'e1ria.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec7 Terceira Forma Normal (3NF): Elimina depend\'eancias transitivas, garantindo que os atributos n\'e3o chave n\'e3o dependam uns dos outros.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec7 Quarta Forma Normal (4NF) e al\'e9m: Lidam com depend\'eancias multivaloradas e outras complexidades para alcan\'e7ar maior efici\'eancia e organiza\'e7\'e3o.\cb1 \
+}

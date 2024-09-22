@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Produto
+comment1.params=nome\ preco
+comment1.target=Produto(java.lang.String,\ float)
+comment2.params=
+comment2.target=java.lang.String\ getNome()
+comment3.params=
+comment3.target=float\ getPreco()
+numComments=4

@@ -21,6 +21,10 @@ class SalaJogoPoker
     {
         numeroIdentificadorDeControle ++;
         jogadorPoker = new Jogador();
+        jogadorPoker.setPontos(10);
+        
+        System.out.println(jogadorPoker.getPontos());
+        
         jogadorPoker.nomeNoJogo = "Player_" + numeroIdentificadorDeControle;
         listaJogadores.add(jogadorPoker);
         
@@ -110,7 +114,24 @@ class SalaJogoPoker
         
         return cartaComprada;
     }
+    
+    void todosOsJogadooresMostramASuaMao()
+    {
+        for(int i = 0; i < listaJogadores.size(); i++)
+        {
+            listaJogadores.get(i).mostrarMao();
+        }
+    }
+    
+    void todosOsJogadoresDescartamUmaCarta()
+    {
+        for(int i = 0; i < listaJogadores.size(); i++)
+        {
+            listaJogadores.get(i).descartarCarta();
+        }
+    }
 }
+
 
 
 

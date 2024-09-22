@@ -2,6 +2,8 @@
 comment0.target=SalaJogoPoker
 comment1.params=
 comment1.target=SalaJogoPoker()
+comment10.params=
+comment10.target=void\ todosOsJogadoresDescartamUmaCarta()
 comment2.params=
 comment2.target=void\ adicionarJogador()
 comment3.params=
@@ -16,4 +18,6 @@ comment7.params=
 comment7.target=void\ todosJogadoresCompramUmaCarta()
 comment8.params=
 comment8.target=Carta\ tirarCartaDoBaralho()
-numComments=9
+comment9.params=
+comment9.target=void\ todosOsJogadooresMostramASuaMao()
+numComments=11
