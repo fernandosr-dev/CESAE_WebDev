@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class AppGestaoFuncioarios
+public class AppGestaoFuncionarios
 {
     // Lista de funcionários:
     private ArrayList<Funcionario> funcionarios;
@@ -34,8 +34,32 @@ public class AppGestaoFuncioarios
             for (int i = 0; i < funcionarios.size(); i++)
             {
                 Funcionario funcionario = funcionarios.get(i);
-                System.out.println("Funcionário: " + funcionario.getName() + ", Salário: " + funcionario.getSalario());
+                System.out.println("Funcionário: " + funcionario.getNome() + ", Salário: " + funcionario.getSalario());
             }
+        }
+    }
+    
+    // Metodo para calcular o total dos salários dos funcionários
+    
+    public float totalSalarios()
+    {
+        if (funcionarios.size() == 0)
+        {
+            System.out.println("Não existem funcionários");
+            // Retorna zero quando a lista está vazia.
+            return 0;
+        }
+        else
+        {
+            float total = 0;
+            for (int i = 0; i < funcionarios.size(); i++)
+            {
+                float salarioFuncionario = funcionarios.get(i).getSalario();
+                total += salarioFuncionario;
+            }
+            
+            System.out.println("Total dos salários de todos os funcionários cadastrados: " + total);
+            return total;
         }
     }
 }

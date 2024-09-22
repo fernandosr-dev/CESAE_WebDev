@@ -5,5 +5,5 @@ comment1.target=Funcionario(java.lang.String,\ float)
 comment2.params=
 comment2.target=java.lang.String\ getNome()
 comment3.params=
-comment3.target=float\ getPreco()
+comment3.target=float\ getSalario()
 numComments=4

@@ -4,7 +4,7 @@ public class Funcionario
     private String nome;
     private float salario;
     
-    Funcionario(String nome, float salario)
+    public Funcionario(String nome, float salario)
     {
         this.nome = nome;
         this.salario = salario;
@@ -17,7 +17,7 @@ public class Funcionario
         return nome;
     }
     
-    public float getPreco()
+    public float getSalario()
     {
         return salario;
     }

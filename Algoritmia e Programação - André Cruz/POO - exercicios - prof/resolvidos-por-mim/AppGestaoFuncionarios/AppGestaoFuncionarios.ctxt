@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=AppGestaoFuncionarios
+comment1.params=
+comment1.target=AppGestaoFuncionarios()
+comment2.params=nome\ salario
+comment2.target=void\ inserirFuncionario(java.lang.String,\ float)
+comment3.params=
+comment3.target=void\ listarFuncionarios()
+comment4.params=
+comment4.target=float\ totalSalarios()
+numComments=5
