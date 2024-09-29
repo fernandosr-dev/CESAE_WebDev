@@ -1,0 +1,14 @@
+*, button {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+  }
+
+  #titulo {
+    background-color: lightblue; 
+  }
+
+  #paragrafo {
+    text-align: left;
+  }
