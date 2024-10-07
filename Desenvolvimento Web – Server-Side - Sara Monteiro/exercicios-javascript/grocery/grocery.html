@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery</title>
+    <link rel="stylesheet" href="grocery.css">
+    <script src="grocery.js" defer></script>
+</head>
+<body>
+
+    <div id="container">
+        <h2>Adicionar Produto à Lista</h2>
+        <form id="groceryForm">
+            <input type="text" id="productInput" placeholder="Produto" required>
+            <input type="number" id="quantityInput" placeholder="Quantidade" required min="1">
+            <button type="submit">Adicionar</button>
+        </form>
+        
+        <h3>Lista de Compras</h3>
+        <ul id="groceryList"></ul>
+    </div>
+    
+</body>
+</html>
