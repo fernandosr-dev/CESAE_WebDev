@@ -8,7 +8,9 @@ const btnGoodbye = document.getElementById('hello');
 // console.log(btnGoodbye);
 
 // criar a funcao com o que quer que faça
-function hello ()
+function hello() {
+    console.log('Hello');
+}
 
 
 // Chamar as funcoes/events

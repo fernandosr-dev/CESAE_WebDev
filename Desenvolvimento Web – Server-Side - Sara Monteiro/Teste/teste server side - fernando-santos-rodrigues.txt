@@ -1,0 +1,119 @@
+// Exercício 1:
+
+// Re: Para tornar as páginas web mais interativas e dinâmicas.
+
+// Exercício 2:
+// Re: O elemento input será criado no HTML, pois é um elemento que faz parte da estrutura da página.
+
+// Exercício 3:
+
+//3.1 num1 + num2 = 8? (1V)
+// Re: Não. num1 e num2 foram declarados como strings. Portanto será retornado na consola 53.
+
+//3.2 helloStudent(‘Rita’, 31) retorna olá Rita, 31? (1V)
+// Re: Não. Retorna Olá Rita
+
+//3.3 hello retorna olá Rita, 31? (1V)
+// Resposta: Não. Retorna 31
+
+//3.4 age retorna 31? (1V)
+// Resposta: Sim.
+
+//3.5 Se eu acrescentar no código num2 = 15 que valor recebo em num2? (1V)
+// Resposta: Retorna 15 pois o valor de num2 foi alterado para o numero inteiro 15.
+
+//3.6 num1 + num2 é agora 20? (1V)
+// Resposta: Não, num1 + num2 é 515
+
+//3.7 Para que num1+num2 seja 16, como coloco no código o num1? (1V)
+// Resposta: num1 = 1;
+
+//3.8 Qual é o tipo de dados da variável jsDone? (1V)
+// Resposta: Boolean
+
+// Exercício 4:
+
+//4.1.Usando os métodos dos Arrays, adiciona no fim do array uma palavra pass à tua escolha.(1V) 
+// Re: passwords.push('fernando1986');
+
+//4.2. Escreva uma condição que, mediante o que o que o user responder, lhe indique através de um alert se acertou numa password que está no array ou não. (1V)
+
+if(passwords.includes(userPassword)){
+        alert('Acertou!');
+    } else {
+        alert('Não acertou!');
+    }
+
+4.3. Crie um novo array chamado safePasses que retorne as passwords com mais de 6
+caracteres(1V).
+// Re: 
+let safePasses = passwords.filter(password => password.length > 6);
+
+// Exercício 5:
+
+5.1. Usando a função forEach dos arrays, itere o array de modo a imprimir na consola o
+seguinte: (1V)
+
+studentGrades.forEach(student => {
+    console.log('A nota de ' + student.studentName + ' é ' + student.grade);
+});
+
+//Considere que o seguinte é escrito na consola do browser:
+//5.2. Qual o valor de studentGrades[5])? (1V)
+// Re: Uncaught SyntaxError: Unexpected token ')' (at app.js:45:17)
+
+//5.3 studentGrades[0].nameAndGrade() é A Rita tem nota 16? (1V)
+// Re: Uncaught TypeError: studentGrades[0].nameAndGrade is not a function
+    at app.js:47:18
+
+// Exercício 6:
+
+//6.1. Substitua “A minha Lista de Aprendizagens como Web Developer” por “Os meus ensinamentos para a vida”. (1V)
+
+let title = document.querySelector('h2');
+    title.textContent = 'Os meus ensinamentos para a vida';
+
+//6.2. A cada um dos items da lista, adicione: com sucesso! (1V)
+
+let listItems = document.querySelectorAll('#myList li');
+    listItems.forEach(item => {
+        item.textContent += ' com sucesso!';
+    });
+
+//6.3. Configure a submissão do formulário para que, ao ser submetido um novo item ele seja  adicionado na lista. (1V)
+
+let form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        let newItemText = document.querySelector('#myItem').value;
+        if (newItemText.trim() !== '') {
+            let newItem = document.createElement('li');
+            newItem.textContent = newItemText + ' com sucesso!';
+            document.querySelector('#myList').appendChild(newItem);
+            document.querySelector('#myItem').value = '';
+        }
+    });
+
+// Exercício 7:
+
+{
+    "name": "TIE bomber",
+    "model": "TIE/sa bomber",
+    "manufacturer": "Sienar Fleet Systems",
+    "cost_in_credits": "unknown",
+    "length": "7.8",
+    "max_atmosphering_speed": "850",
+    "crew": "1",
+    "passengers": "0",
+    "cargo_capacity": "none",
+    "consumables": "2 days",
+    "vehicle_class": "space/planetary bomber",
+    "pilots": [],
+    "films": [
+        "https://swapi.dev/api/films/2/",
+        "https://swapi.dev/api/films/3/"
+    ],
+    "created": "2014-12-15T12:33:15.838000Z",
+    "edited": "2014-12-20T21:30:21.675000Z",
+    "url": "https://swapi.dev/api/vehicles/16/"
+}
