@@ -13,4 +13,5 @@ class UserController extends Controller
     public function addUser(){
         return view('users.add_user');
     }
+
 }

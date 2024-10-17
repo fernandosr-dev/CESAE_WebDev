@@ -1,5 +1,6 @@
 
     @extends('layouts.femaster')
+
     @section('content')
 
     @php
@@ -48,11 +49,29 @@
     <h1>Olá! Sou a nossa casa!</h1>
     <p>{{$myFirstVar}}</p>
 
+    <ul>
+      @foreach ( $weekDays as $day)
+          <li>{{$day}}</li>
+
+      @endforeach
+    </ul>
+    {{-- <p>{{$weekDays[0]}}</p> --}}
+
     @if ($myName)
         <p>{{$myName}}</p>
     @else
         <p>Nome não encontrado</p>
     @endif
+
+    <h6>Dados do Curso</h6>
+    <p>Nome: {{$info['name']}}</p>
+    <p>Horas:{{$info['hours']}}</p>
+
+    <h6>Dados Cesae</h6>
+    <p>Nome: {{$cesaeInfo['name']}}</p>
+    <p>Endereço:{{$cesaeInfo['address']}}</p>
+    <p>email:{{$cesaeInfo['email']}}</p>
+
     <ul>
         <li><a href="{{route('welcome')}}">Welcome</a></li>
         <li><a href="{{route('users.all')}}">All Users</a></li>
