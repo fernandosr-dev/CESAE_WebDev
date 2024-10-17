@@ -9,7 +9,7 @@
 
 
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          {{-- <a class="navbar-brand" href="#">Navbar</a> --}}
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -46,7 +46,7 @@
 
     <img src="{{asset('images/pwa.webp')}}" alt="pwa">
     <h1>Olá! Sou a nossa casa!</h1>
-    <p>{{$myVar}}</p>
+    <p>{{$myFirstVar}}</p>
 
     @if ($myName)
         <p>{{$myName}}</p>

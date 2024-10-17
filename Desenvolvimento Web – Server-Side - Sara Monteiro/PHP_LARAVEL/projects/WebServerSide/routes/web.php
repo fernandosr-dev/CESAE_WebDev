@@ -1,22 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\IndexController;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/', [IndexController::class, 'welcome'])->name('welcome');
 
-Route::get('/home', function () {
-    return view('utils.home');
-})->name('homepage');
+Route::get('/home', [IndexController::class, 'home'])->name('homepage');
 
-Route::get('/users', function () {
-    return view('users.all_users');
-})->name('users.all');
+Route::get('/users', [UserController::class, 'allUsers'])->name('users.all');
 
-Route::get('/add_user', function () {
-    return view('users.add_user');
-})->name('users.add');
+Route::get('/add_user', [UserController::class, 'addUser'])->name('users.add');
 
 Route::get('/hello-world/{name}', function ($name) {
     return '<h1>Hello '.$name. '</h1>';
